@@ -13,7 +13,7 @@ function secondsToMinutesSeconds(seconds) {
     return `${formattedMinutes}:${formattedSeconds}`;
 }
 async function getsongs() {
-    let response = await fetch("/songs/Die-With-A-Smile.mp3");
+    let response = await fetch("/songs/songs.json");
     let text = await response.text();
     let div = document.createElement("div");
     div.innerHTML = text; // corrected here.
