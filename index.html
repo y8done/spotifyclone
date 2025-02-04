@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+</head>
+
+<body>
+    <div class="main flex bg-color">
+        <div class="left border">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo flex">
+                    <img class="invert" width = "100px"src="images/logo.svg" alt="Spotify" />
+                    <img class="close invert" src="images/close.svg" alt="">
+                </div>
+                <ul>
+                    <li class="flex">
+                        <img class="invert" src="images/homeicon.svg" alt="Home" />Home
+                    </li>
+                    <li class="flex">
+                        <img class="invert" src="images/search.svg" alt="home" />Search
+                    </li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading flex">
+                    <img class="invert" src="images/playlist.svg" alt="playlist" />Your
+                    Library
+                </div>
+                <div class="songList">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer flex">
+                    <div>
+                        <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right border bg-grey rounded">
+            <div class="header flex">
+                <div class="nav">
+                    <img class="hamburger invert" src="images/hamburger.svg" alt="" />
+                    <img class="invert" src="images/left.svg" alt="" />
+                    <img class="invert" src="images/right.svg" alt="" />
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn m-1">Sign Up</button>
+                    <button class="loginbtn m-1">Log In</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer flex">
+                    <div class="card">
+                        <div class="play">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle background -->
+                                <circle cx="12" cy="12" r="12" fill="#4CAF50" />
+                                <!-- Centered play icon with padding -->
+                                <polygon points="10,8 10,16 16,12" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.etsystatic.com/32679671/r/il/e3c12f/3489029208/il_570xN.3489029208_2qm5.jpg"
+                            alt="" />
+                        <h2>Happy Hits</h2>
+                        <p>Make your day more exciting</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green circle background -->
+                                <circle cx="12" cy="12" r="12" fill="#4CAF50" />
+                                <!-- Centered play icon with padding -->
+                                <polygon points="10,8 10,16 16,12" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.etsystatic.com/32679671/r/il/e3c12f/3489029208/il_570xN.3489029208_2qm5.jpg"
+                            alt="" />
+                        <h2>Happy Hits</h2>
+                        <p>Make your day more exciting</p>
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons flex justify-center">
+                            <img width="35px" id="previous" src="images/previous.svg" alt="" />
+                            <img width="35px" id="play" src="images/play.svg" alt="" />
+                            <img width="35px" id="next" src="images/forward.svg" alt="" />
+                        </div>
+                        <div class="songtime"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
