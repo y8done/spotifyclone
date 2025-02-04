@@ -13,7 +13,7 @@ function secondsToMinutesSeconds(seconds) {
     return `${formattedMinutes}:${formattedSeconds}`;
 }
 async function getsongs() {
-    let response = await fetch("./songs/");
+    let response = await fetch("../songs/");
     let text = await response.text();
     let div = document.createElement("div");
     div.innerHTML = text; // corrected here.
@@ -28,7 +28,7 @@ async function getsongs() {
     return songs;
 }
 const playMusic = (track, pause = false) => {
-    currentSong.src = "./songs/" + track + ".mp3";
+    currentSong.src = "../songs/" + track + ".mp3";
     if (!pause) {
         currentSong.play();
         play.src = "images/pause.svg";
