@@ -14,19 +14,10 @@ function secondsToMinutesSeconds(seconds) {
 }
 async function getsongs() {
     let response = await fetch("/songs/songs.json");
-    let text = await response.text();
-    let div = document.createElement("div");
-    div.innerHTML = text; // corrected here.
-    let as = div.getElementsByTagName("a");
-    let songs = [];
-    for (let i = 0; i < as.length; i++) {
-        const element = as[i];
-        if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split("/songs/")[1]);
-        }
-    }
+    let songs = await response.json();
     return songs;
 }
+
 const playMusic = (track, pause = false) => {
     currentSong.src = "/songs/" + track + ".mp3";
     if (!pause) {
